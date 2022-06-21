@@ -1,0 +1,35 @@
+.footer {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.596);
+  color: white;
+  &-list {
+    margin: 0;
+    padding-top: 27px;
+  }
+  &__logo {
+    font-family: "shrikhand";
+    font-weight: 500;
+    padding-top: 1em;
+  }
+  &__links {
+    padding-bottom: 1em;
+    & a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+      &:hover {
+        color: #ffc107;
+      }
+    }
+  }
+
+  @include desktop-screen {
+    text-align: center;
+  }
+
+  @include tablet-screen {
+    text-align: center;
+  }
+}
